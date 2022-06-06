@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleView.ControladorListarDespesa">
+  <children>
+    <Button fx:id="btPesquisar" layoutX="367.0" layoutY="100.0" mnemonicParsing="false" onAction="#pesquisar" text="Pesquisar" />
+    <TableView fx:id="tvLista" layoutX="72.0" layoutY="155.0" prefHeight="200.0" prefWidth="476.0" />
+      <ComboBox fx:id="cbPeriodo" layoutX="45.0" layoutY="33.0" prefWidth="150.0" />
+      <Button fx:id="btDelete" layoutX="286.0" layoutY="366.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <ComboBox fx:id="cbTipo" layoutX="236.0" layoutY="33.0" prefWidth="150.0" />
+      <TextField fx:id="txtValor" layoutX="412.0" layoutY="33.0" />
+      <Label layoutX="51.0" layoutY="14.0" text="Periodos" />
+      <Label layoutX="236.0" layoutY="14.0" text="Tipos" />
+      <Label layoutX="414.0" layoutY="14.0" text="Valor" />
+      <Group layoutX="96.0" layoutY="86.0" />
+      <HBox fx:id="hbRadios" layoutX="115.0" layoutY="100.0" prefHeight="38.0" prefWidth="243.0">
+         <children>
+            <RadioButton fx:id="rbPeriodos" mnemonicParsing="false" text="Periodos      ">
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgRadios" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbTipos" mnemonicParsing="false" text="Tipos      " toggleGroup="$tgRadios" />
+            <RadioButton fx:id="rbValor" mnemonicParsing="false" text="Valor" toggleGroup="$tgRadios" />
+         </children>
+      </HBox>
+  </children>
+</Pane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleView.ControladorListarReceita">
+  <children>
+    <Button fx:id="btPesquisar" layoutX="368.0" layoutY="45.0" mnemonicParsing="false" onAction="#pesquisar" text="Pesquisar" />
+    <TableView fx:id="tvLista" layoutX="62.0" layoutY="86.0" prefHeight="200.0" prefWidth="476.0" />
+      <Button fx:id="btDelete" layoutX="409.0" layoutY="312.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Group layoutX="96.0" layoutY="86.0" />
+      <Button fx:id="btAlterar" layoutX="105.0" layoutY="312.0" mnemonicParsing="false" onAction="#alterar" text="Altera" />
+  </children>
+</Pane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleView.ControladorCadastroDespesa">
+   <children>
+      <TextField fx:id="nomeDespesa" layoutX="172.0" layoutY="75.0" />
+      <TextField fx:id="dataDespesa" layoutX="172.0" layoutY="120.0" />
+      <ComboBox fx:id="cbTipo" layoutX="173.0" layoutY="161.0" prefWidth="150.0" />
+      <TextField fx:id="valorDespesa" layoutX="172.0" layoutY="210.0" />
+      <ComboBox fx:id="cbPeriodo" layoutX="170.0" layoutY="310.0" prefWidth="150.0" />
+      <TextField fx:id="numParcelaDespesa" layoutX="172.0" layoutY="258.0" />
+      <Label focusTraversable="false" layoutX="90.0" layoutY="79.0" text="Nome:" />
+      <Label layoutX="179.0" layoutY="15.0" text="Cadastro Despesas">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label focusTraversable="false" layoutX="90.0" layoutY="124.0" text="Data:" />
+      <Label focusTraversable="false" layoutX="90.0" layoutY="165.0" text="TIpo:" />
+      <Label focusTraversable="false" layoutX="90.0" layoutY="214.0" prefHeight="17.0" prefWidth="35.0" text="Valor :" />
+      <Label focusTraversable="false" layoutX="90.0" layoutY="262.0" text="Parcelas:" />
+      <Label focusTraversable="false" layoutX="90.0" layoutY="314.0" text="Periodo" />
+      <Button fx:id="btCadastrarDespesa" layoutX="163.0" layoutY="371.0" mnemonicParsing="false" onAction="#salvar" prefHeight="25.0" prefWidth="160.0" text="Cadastrar" />
+      <Button fx:id="btCancelar" layoutX="413.0" layoutY="371.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+   </children>
+</Pane>

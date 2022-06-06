@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="604.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleView.ControladorMenu">
+   <children>
+      <MenuBar fx:id="menu" layoutX="-1.0" layoutY="2.0" prefHeight="25.0" prefWidth="634.0">
+        <menus>
+          <Menu fx:id="menuDespesa" mnemonicParsing="false" text="DESPESAS">
+            <items>
+                  <MenuItem fx:id="novaDespesa" mnemonicParsing="false" onAction="#cadastroDespesa" text="Nova" />
+              <MenuItem fx:id="pesquisarDespesa" mnemonicParsing="false" onAction="#listarDespesa" text="Listar" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuReceita" mnemonicParsing="false" text="RECEITAS">
+            <items>
+              <MenuItem fx:id="novaReceita" mnemonicParsing="false" onAction="#cadastroReceita" text="Nova" />
+                  <MenuItem fx:id="pesquisarReceita" mnemonicParsing="false" onAction="#listarReceita" text="Listar" />
+            </items>
+          </Menu>
+          <Menu fx:id="menuRelatorio" mnemonicParsing="false" text="RELATÓRIOS">
+               <items>
+                  <MenuItem fx:id="exibirRelatorio" mnemonicParsing="false" onAction="#exibirRelatorio" text="exibir" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Sair">
+               <items>
+                  <MenuItem fx:id="sair" mnemonicParsing="false" onAction="#sair" text="Sair" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

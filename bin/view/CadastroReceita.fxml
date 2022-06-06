@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleView.ControladorCadastroReceita">
+   <children>
+      <Label fx:id="titulo" layoutX="179.0" layoutY="15.0" text="Cadastro Receitas">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btCadastrar" layoutX="163.0" layoutY="371.0" mnemonicParsing="false" onAction="#salvar" prefHeight="25.0" prefWidth="160.0" text="Salvar" />
+      <Button fx:id="btCancelar" layoutX="413.0" layoutY="371.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+      <VBox layoutX="174.0" layoutY="69.0" prefHeight="261.0" prefWidth="139.0" spacing="20.0">
+         <children>
+            <TextField fx:id="nome" />
+            <TextField fx:id="dataInicio" />
+            <TextField fx:id="dataFim" />
+            <ComboBox fx:id="cbTipo" prefWidth="150.0">
+               <opaqueInsets>
+                  <Insets bottom="5.0" />
+               </opaqueInsets>
+            </ComboBox>
+            <TextField fx:id="valor" />
+            <ComboBox fx:id="cbPeriodo" prefWidth="150.0" />
+         </children>
+      </VBox>
+      <VBox layoutX="63.0" layoutY="69.0" prefHeight="251.0" prefWidth="100.0" spacing="30.0">
+         <children>
+            <Label focusTraversable="false" text="Nome:" />
+            <Label focusTraversable="false" text="Data Inicio:" />
+            <Label focusTraversable="false" text="Data Fim" />
+            <Label focusTraversable="false" text="TIpo:" />
+            <Label focusTraversable="false" prefHeight="17.0" prefWidth="35.0" text="Valor :" />
+            <Label focusTraversable="false" text="Periodo" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
